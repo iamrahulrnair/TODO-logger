@@ -1,0 +1,12 @@
+body{
+    color: azure;
+    background-color: #000000;
+}
+.logout{
+    color:#12e6c8;
+    transition:color .5s;
+
+}
+.logout:hover{
+    color: #efdfbf;
+}

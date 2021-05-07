@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+</head>
+
+
+<body>
+    <div id="myDIV" class="header">
+        <h2>My To Do List</h2>
+        <input type="text" id="myInput" placeholder="Title...">
+        <span onclick="newElement()" class="addBtn">Add</span>
+      </div>
+      
+      <ul id="myUL">
+      </ul>
+      <input type="submit" value="save" class="save">
+      
+<form method="POST">
+    {%csrf_token%}
+    <input class="hiddenfield" type="hidden" value="{{detailobject.data}}" name="encodeddata">
+    <input class="datehiddenfield" type="hidden" value="{{detailobject.date_created}}" name="datefield">
+    <input class="listlength" type="hidden" value="0" name="listlength">
+
+    <input type="submit" value="submit" class="submit">
+</form>
+ 
+<script src="{%static 'js/script.js'%}"></script>
+
+</body>
+</html>

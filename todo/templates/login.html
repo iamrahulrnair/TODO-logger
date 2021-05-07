@@ -1,0 +1,44 @@
+{%extends 'base.html'%}
+{%load bootstrap4%}
+{%block content%}
+
+<!-- <div class="container-fluid" >  
+    <div class="row align-items-center bg-dark " style="height: 100vh;width: 50%;">
+        <div class="col-sm-12">
+            <div class="container">
+                <form method="POST">
+                    {%csrf_token%}
+                    {%bootstrap_form form%}
+                    <input type="submit" value="submit" class="btn btn-success mt-3">
+                    <input type="hidden" name="next" value="{{next}}">
+                </form>
+            </div>
+            
+        </div>
+        
+
+    </div>
+    
+</div> -->
+<!-- bg-1=#414141 -->
+<!-- bg-2=#000000 -->
+
+<div class="container-fluid">
+    <div class="row align-items-center"  style="height: 100vh;">
+        <div class="col-md-6">
+            <div class="container">
+                <form method="POST">
+                    {%csrf_token%}
+                    {%bootstrap_form form%}
+                    <input type="submit" value="submit" class="btn btn-success mt-3">
+                    <input type="hidden" name="next" value="{{next}}">
+                </form>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h1 style="color: #12e6c8;">Welcome to TO-DO viewer</h1>
+        </div>
+    </div>
+</div>
+   
+{%endblock%}

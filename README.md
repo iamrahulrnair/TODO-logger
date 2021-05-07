@@ -16,3 +16,11 @@ A simple webapp built on django which helps you check out your daily tasks.
 
 ## you can check the site here
 # [TODO-logger](https://rahulrnair.pythonanywhere.com)
+
+---
+
+#### requirments
+--- 
+1. django
+2. django-bootstrap4
+3. pillow (wokring with images)

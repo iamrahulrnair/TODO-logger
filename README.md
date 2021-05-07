@@ -23,4 +23,4 @@ A simple webapp built on django which helps you check out your daily tasks.
 --- 
 1. django
 2. django-bootstrap4
-3. pillow (wokring with images)
+3. pillow (working with images)

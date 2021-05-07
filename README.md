@@ -1,12 +1,11 @@
 # TODO-logger
 A simple webapp built on django which helps you check out your daily tasks.
 ---
----
 
 ## keep in mind that,i have not included   loginrequired decorators and mixins such as LoginRequiredMixins for certain views and made it simple
 
 ---
----
+
 
 # SECRET_KEY
 ---
@@ -16,4 +15,4 @@ A simple webapp built on django which helps you check out your daily tasks.
 ---
 
 ## you can check the site here
-# [TODO-logger](rahulrnair.pythonanywhere.com)
+# [TODO-logger](https://rahulrnair.pythonanywhere.com)

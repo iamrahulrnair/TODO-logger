@@ -1,26 +1,13 @@
-# TODO-logger
+## TODO-logger
 A simple webapp built on django which helps you check out your daily tasks.
----
+i have not included loginrequired decorators and mixins such as LoginRequiredMixins for certain views and made it simple
+### [TODO-logger](https://rahulrnair.pythonanywhere.com)
 
-## keep in mind that,i have not included   loginrequired decorators and mixins such as LoginRequiredMixins for certain views and made it simple
+#### Requirments
+ - [ ]  django
+ - [ ]  django-bootstrap4
 
----
+This app can store user session, and allows user to store marked daily todos and view the activities performed per day.
 
+( developed when i was learning the basics of **django** )
 
-# SECRET_KEY
----
-### This value [the SECRET_KEY setting] is the key to securing signed data – it is vital you keep this secure, or attackers could use it to generate their own signed values.
-### so remember to add secret key for development,since i have removed it
-
----
-
-## you can check the site here
-# [TODO-logger](https://rahulrnair.pythonanywhere.com)
-
----
-
-#### requirments
---- 
-1. django
-2. django-bootstrap4
-3. pillow (working with images)
